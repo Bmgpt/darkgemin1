@@ -16,8 +16,7 @@ st.set_page_config(
 )
 
 st.title("Dark Gemini AI")
-st.caption("Dark Gemini AI is built from the ground up for multimodality reasoning seamlessly across text, images, video, audio, and code. The most capable Dark AI.
-")
+st.caption("""Dark Gemini AI is built from the ground up for multimodality reasoning seamlessly across text, images, video, audio, and code. The most capable Dark AI.""")
 
 
 if "app_key" not in st.session_state:
