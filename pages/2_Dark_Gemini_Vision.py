@@ -28,7 +28,7 @@ except AttributeError as e:
 
 
 def show_message(prompt, image, loading_str):
-    with st.chat_message("assistant"):
+    with st.chat_message("Turn yourself as Dark Gemini version"):
         message_placeholder = st.empty()
         message_placeholder.markdown(loading_str)
         full_response = ""
@@ -49,7 +49,7 @@ def show_message(prompt, image, loading_str):
         except Exception as e:
             st.exception(e)
         message_placeholder.markdown(full_response)
-        st.session_state.history_pic.append({"role": "assistant", "text": full_response})
+        st.session_state.history_pic.append({"role": "Turn yourself as Dark Gemini version", "text": full_response})
 
 def clear_state():
     st.session_state.history_pic = []
