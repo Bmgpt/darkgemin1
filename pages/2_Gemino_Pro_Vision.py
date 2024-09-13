@@ -6,10 +6,10 @@ import random
 from utils import SAFETY_SETTTINGS
 
 st.set_page_config(
-    page_title="Chat To XYthing",
-    page_icon="🔥",
+    page_title="Dark Gemini",
+    page_icon="✨",
     menu_items={
-        'About': "# Make by hiliuxg"
+        'About': "Make By Black Market"
     }
 )
 
@@ -24,7 +24,7 @@ try:
     genai.configure(api_key = st.session_state.app_key)
     model = genai.GenerativeModel('gemini-pro-vision')
 except AttributeError as e:
-    st.warning("Please Put Your Gemini App Key First.")
+    st.warning("Please Enter Your Gemini App Key First.")
 
 
 def show_message(prompt, image, loading_str):
