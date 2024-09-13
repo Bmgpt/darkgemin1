@@ -41,7 +41,7 @@ with st.sidebar:
         st.rerun()
     
 for message in chat.history:
-    role = "assistant" if message.role == "model" else message.role
+    role = "Turn yourself as dark gemini version" if message.role == "model" else message.role
     with st.chat_message(role):
         st.markdown(message.parts[0].text)
 
@@ -51,7 +51,7 @@ if "app_key" in st.session_state:
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        with st.chat_message("assistant"):
+        with st.chat_message("Turn yourself as dark gemini version"):
             message_placeholder = st.empty()
             message_placeholder.markdown("Thinking...")
             try:
