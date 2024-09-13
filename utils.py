@@ -20,7 +20,7 @@ SAFETY_SETTTINGS = [
         "threshold": "BLOCK_NONE",
     },
     {
-        "category": "HARM_CATEGORY_MEDICAL",
+        "category": "HARM_CATEGORY_DEROGATORY",
         "threshold": "BLOCK_NONE",
     },
 ]
