@@ -13,7 +13,7 @@ st.set_page_config(
     }
 )
 
-st.title('Upload Image And Ask Dark Gemini')
+st.title('Dark Gemini Vision')
 
 if "app_key" not in st.session_state:
     app_key = st.text_input("Your Gemini App Key", type='password')
